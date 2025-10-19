@@ -38,6 +38,10 @@
       margin: 1rem 0;
     }
 
+    ul {
+      margin: 0.5rem 0 0.5rem 1.5rem;
+    }
+
     footer {
       margin-top: 3rem;
       text-align: center;
@@ -62,44 +66,115 @@
 
     <p>Last updated: July 17, 2025</p>
 
-    <p>This Privacy Policy describes how the mobile application <strong>Darrt</strong> (“we”, “our”, or “the app”) collects, uses, and protects your information.</p>
-
-    <h2>Microphone Access (RECORD_AUDIO)</h2>
     <p>
-      Our app requests access to your device's microphone strictly for the purpose of enabling voice input. This allows you to create tasks and notes by speaking instead of typing.
+      This Privacy Policy describes how the mobile application <strong>Darrt</strong> (“we”, “our”, or “the app”) collects, uses, and protects your information.
+    </p>
+
+    <h2>1. Microphone Access (RECORD_AUDIO)</h2>
+    <p>
+      Our app requests access to your device's microphone strictly for enabling voice input. This allows you to create tasks and notes by speaking instead of typing.
     </p>
     <p>
       We <strong>do not use</strong> this permission for any other purpose such as background listening, voice commands, or audio recording.
     </p>
     <p>
-      Audio captured via the microphone is only used locally for converting speech to text and is <strong>not stored</strong> or sent to our servers. You have full control over granting and revoking this permission at any time via your device settings.
+      Audio captured via the microphone is processed <strong>locally on your device</strong> for speech-to-text conversion and is <strong>never stored</strong> or transmitted to our servers.
     </p>
 
-    <h2>Google Drive Access</h2>
+    <h2>2. Google Drive Access</h2>
     <p>
-      The app offers a backup and restore feature using your Google Drive. This requires you to sign in with your Google account so the app can access your personal Drive storage.
+      The app offers a backup and restore feature using your Google Drive. This requires signing in with your Google account to access your personal Drive storage.
     </p>
     <p>
-      We use Google Sign-In solely to obtain the necessary access token to store and retrieve your backup files. <strong>We do not collect, store, or transmit any personal information</strong> such as your email address, name, or profile details.
+      We use Google Sign-In solely to obtain the secure access token required for backup and restore. <strong>We do not collect, store, or transmit any personal information</strong> such as your name, email, or profile data.
     </p>
     <p>
-      All backup operations are performed directly on your device using the secure access token provided by Google, and no data is sent to our servers.
-    </p>
-
-    <h2>Data Collection and Usage</h2>
-    <p>
-      We do not collect or share any personal data or audio recordings. All information created via speech-to-text or backed up to Google Drive stays on your device or within your personal Drive account unless explicitly shared by you.
+      All backup operations are performed <strong>locally on your device</strong> using Google’s secure authentication. No data is sent to our servers, and your backups are stored only in your own Google Drive account.
     </p>
 
-    <h2>Changes to This Policy</h2>
+    <h2>3. Third-Party SDKs and Data Collection</h2>
     <p>
-      We may update this Privacy Policy from time to time. If any significant changes are made, they will be reflected on this page with an updated date.
+      Darrt uses several third-party SDKs to provide core functionality such as ads, performance monitoring, and purchase verification. These SDKs may collect certain device or usage information as described below.
     </p>
 
-    <h2>Contact Us</h2>
+    <h3>a. Google Mobile Ads (AdMob) SDK</h3>
     <p>
-      If you have any questions or concerns about this Privacy Policy, you can contact us at:
-      <br/><br/>
+      We use AdMob to display ads and gather analytics. The SDK may automatically collect and share data for advertising, analytics, and fraud prevention purposes, including:
+    </p>
+    <ul>
+      <li><strong>IP Address:</strong> Used to estimate the general location of the device.</li>
+      <li><strong>User Product Interactions:</strong> Includes app launches, taps, and video views.</li>
+      <li><strong>Diagnostic Information:</strong> App crash logs, performance data, and energy usage.</li>
+      <li><strong>Device and Account Identifiers:</strong> Such as Advertising ID and app set ID.</li>
+    </ul>
+    <p>
+      All data transmitted through the Google Mobile Ads SDK is <strong>encrypted in transit</strong> using the Transport Layer Security (TLS) protocol.  
+      Learn more about Google’s data use here: 
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.
+    </p>
+
+    <h3>b. Sentry SDK</h3>
+    <p>
+      The app uses Sentry for crash reporting and performance monitoring. Sentry helps us identify and fix bugs and improve app stability. Information collected may include:
+    </p>
+    <ul>
+      <li>Device model and operating system version</li>
+      <li>App version and session data</li>
+      <li>Battery level and network status</li>
+      <li>Approximate geographical region (not precise location)</li>
+    </ul>
+    <p>
+      This data is used <strong>only</strong> to improve performance and app reliability. It is not shared with advertisers or other third parties.  
+      Learn more at: 
+      <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer">Sentry Privacy Policy</a>.
+    </p>
+
+    <h3>c. RevenueCat SDK</h3>
+    <p>
+      We use RevenueCat to manage in-app purchases and subscriptions (for example, ad removal or premium access). RevenueCat may collect:
+    </p>
+    <ul>
+      <li>Purchase history to verify premium or subscription status</li>
+      <li>Anonymous app user identifiers created locally by the SDK</li>
+    </ul>
+    <p>
+      This information is used only to confirm purchase validity and access levels and is not shared with any external third party.  
+      Learn more at: 
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.
+    </p>
+
+    <h3>d. Google Sign-In SDK</h3>
+    <p>
+      We use Google Sign-In only to authenticate your account for Google Drive backup and restore. The sign-in process is handled securely by Google.  
+      We do not store your credentials, and no data from Google Sign-In is shared with other services or stored on our servers.
+    </p>
+
+    <h2>4. Data Storage and Security</h2>
+    <p>
+      Darrt does not operate any external servers and does not store personal data. All sensitive operations (like backups, purchases, or sign-in) are performed securely on your device using trusted SDKs that follow industry-standard encryption.
+    </p>
+    <p>
+      Backup files are stored <strong>only</strong> in your personal Google Drive account.
+    </p>
+
+    <h2>5. Data Sharing</h2>
+    <p>
+      We do <strong>not sell, rent, or share</strong> any personal data with third parties. Any information collected by third-party SDKs (AdMob, Sentry, RevenueCat, Google) is governed by their respective privacy policies and used only for their stated purposes.
+    </p>
+
+    <h2>6. Children’s Privacy</h2>
+    <p>
+      Our app is not directed toward children under 13 years of age. We do not knowingly collect or store personal information from children.
+    </p>
+
+    <h2>7. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy periodically. Any significant updates will be reflected on this page with an updated “Last Updated” date.
+    </p>
+
+    <h2>8. Contact Us</h2>
+    <p>
+      If you have any questions or concerns about this Privacy Policy, please contact us at:<br><br>
       <strong>Email:</strong> support@stellarmotion.dev
     </p>
 
